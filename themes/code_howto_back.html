@@ -1,0 +1,58 @@
+<div class="apple-shell">
+  <header class="apple-meta">
+    <span class="apple-deck">{{Deck}}</span>
+  </header>
+
+  <main class="apple-content">
+    <div class="apple-kicker">Effect</div>
+    <section class="apple-question">
+      {{Effect}}
+    </section>
+
+    <hr>
+
+    <div class="apple-kicker">How</div>
+    <section class="apple-answer">
+      {{How}}
+    </section>
+
+    {{#Comments}}
+    <section class="apple-panel">
+      <div class="apple-kicker">Comments</div>
+      {{Comments}}
+    </section>
+    {{/Comments}}
+
+    {{#Context}}
+    <section class="apple-panel">
+      <div class="apple-kicker">Context</div>
+      {{Context}}
+    </section>
+    {{/Context}}
+  </main>
+  {{#Tags}}
+  <footer class="apple-tags">{{Tags}}</footer>
+  {{/Tags}}
+</div>
+<script>
+(function () {
+  var groups = document.querySelectorAll(".apple-tags, .tags");
+  for (var i = 0; i < groups.length; i++) {
+    var raw = groups[i].textContent.replace(/^\s+|\s+$/g, "");
+    if (!raw) {
+      groups[i].style.display = "none";
+      continue;
+    }
+
+    var parts = raw.split(/\s+/);
+    groups[i].innerHTML = "";
+
+    for (var j = 0; j < parts.length; j++) {
+      var pill = document.createElement("span");
+      pill.className = "tag";
+      pill.textContent = parts[j].replace(/_/g, " ").replace(/::/g, " › ");
+      groups[i].appendChild(pill);
+    }
+  }
+})();
+</script>

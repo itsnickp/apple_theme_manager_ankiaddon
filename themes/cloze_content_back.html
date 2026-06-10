@@ -1,0 +1,37 @@
+<div class="apple-shell">
+  <header class="apple-meta">
+    <span class="apple-deck">{{Deck}}</span>
+  </header>
+
+  <main class="apple-content">
+    {{cloze:Content}}
+
+    {{#Note}}
+    <section class="apple-panel">
+      <div class="apple-kicker">Note</div>
+      {{Note}}
+    </section>
+    {{/Note}}
+
+    {{#Mnemonics}}
+    <section class="apple-panel">
+      <div class="apple-kicker">Mnemonics</div>
+      {{Mnemonics}}
+    </section>
+    {{/Mnemonics}}
+
+    {{#Extra}}
+    <section class="apple-panel">
+      <div class="apple-kicker">Extra</div>
+      {{Extra}}
+    </section>
+    {{/Extra}}
+
+    {{#Cloze99}}
+    <section class="apple-panel">
+      <div class="apple-kicker">Cloze99</div>
+      {{Cloze99}}
+    </section>
+    {{/Cloze99}}
+  </main>
+</div>

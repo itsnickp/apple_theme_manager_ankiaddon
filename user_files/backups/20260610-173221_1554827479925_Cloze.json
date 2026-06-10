@@ -1,0 +1,15 @@
+{
+  "addon": "apple_theme_manager",
+  "reason": "before_apply_cloze_text",
+  "timestamp": 1781092041,
+  "model_id": 1554827479925,
+  "model_name": "Cloze+",
+  "css": ".card {\n font-family: times;\n font-size: 24px;\n text-align: center;\n color: black;\n background-color: #edd1b0;\n}\n\n.cloze {\n font-weight: bold;\n font-size: 30px;\n color: blue;\n}\n.nightMode .cloze {\n color: lightblue;\n}",
+  "templates": [
+    {
+      "name": "Cloze",
+      "qfmt": "{{cloze:Text}}",
+      "afmt": "{{cloze:Text}}<br>\n\n<hr>\n{{Extra}}"
+    }
+  ]
+}

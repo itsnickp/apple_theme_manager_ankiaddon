@@ -1,0 +1,6 @@
+{
+  "auto_backup": true,
+  "apply_to_all_card_templates_by_default": false,
+  "show_unsupported_note_types": true,
+  "default_preset": "auto"
+}

@@ -1,0 +1,15 @@
+{
+  "addon": "apple_theme_manager",
+  "reason": "before_apply_basic",
+  "timestamp": 1781089951,
+  "model_id": 1485288820312,
+  "model_name": "01 BASIC",
+  "css": ".card {\n font-family: Consolas;\n font-size: 30px;\n text-align: center;\n color: black;\n background-color: white;\n}\nimg {\n  max-width: none;\n  max-height: none;\n}",
+  "templates": [
+    {
+      "name": "Card 1",
+      "qfmt": "{{Front}}",
+      "afmt": "{{Back}}"
+    }
+  ]
+}

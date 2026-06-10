@@ -1,0 +1,50 @@
+<div class="apple-shell apple-io-card">
+  <header class="apple-meta">
+    <span class="apple-deck">{{Deck}}</span>
+  </header>
+
+  <main class="apple-content">
+    {{#Header}}
+    <section class="apple-io-header">{{Header}}</section>
+    {{/Header}}
+
+    <section class="apple-io-stage">
+      <div class="apple-io-image">
+        {{Image}}
+        <div class="apple-io-mask">{{Answer Mask}}</div>
+      </div>
+    </section>
+
+    {{#Footer}}
+    <section class="apple-io-footer">{{Footer}}</section>
+    {{/Footer}}
+
+    {{#Remarks}}
+    <section class="apple-panel">
+      <div class="apple-kicker">Remarks</div>
+      {{Remarks}}
+    </section>
+    {{/Remarks}}
+
+    {{#Sources}}
+    <section class="apple-panel">
+      <div class="apple-kicker">Sources</div>
+      {{Sources}}
+    </section>
+    {{/Sources}}
+
+    {{#Extra 1}}
+    <section class="apple-panel">
+      <div class="apple-kicker">Extra 1</div>
+      {{Extra 1}}
+    </section>
+    {{/Extra 1}}
+
+    {{#Extra 2}}
+    <section class="apple-panel">
+      <div class="apple-kicker">Extra 2</div>
+      {{Extra 2}}
+    </section>
+    {{/Extra 2}}
+  </main>
+</div>
